@@ -10,7 +10,7 @@ Ensure you have MATLAB R2024a installed on your machine to run the simulation co
 
 ### Setup
 1. Clone this repository to your local machine: `git clone https://github.com/citina/microsimulation-mpox-LAC.git`
-2. Navigate to the cloned directory: cd microsimulation-mpox-LAC
+2. Navigate to the cloned directory: `cd microsimulation-mpox-LAC`
    
 ## Structure and Usage
 The repository is structured as follows:
