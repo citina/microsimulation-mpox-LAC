@@ -53,9 +53,6 @@ mixing_mat_file = filePaths{4};
 % File path for number of partners weekly based on mixing stratification;
 num_partners_file = filePaths{5};
 
-% Folder path for where the state matrices are saved
-state_matrices_path = filePaths{6};
-
 % Paths defined for natural death transition
 deathNatural_transition_path = filePaths{7};
 
@@ -79,7 +76,7 @@ sym2recover_transition_path = filePaths{17}; % for symptomatic
 ontrt_transition_path = filePaths{18}; 
 
 % Paths defined for isolation transition
-iso_transition_path = 'input/isolationOn_0.2.csv'; 
+iso_transition_path = '../input/isolationOn_0.2.csv'; 
 
 % % Paths for policies
 % vax_05x = filePaths{20}; 

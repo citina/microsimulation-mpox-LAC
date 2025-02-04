@@ -26,7 +26,7 @@ policy_wk = 1000; % ploicy starting week, week0 Jun26-Jul02, week14 Oct2-Oct8
 sens = 0; % turn on or off sens analysis
 
 % defining the input file name
-inputHeader = "Inputs_mpox2024_set2";
+inputHeader = "../input/Inputs_mpox2024_set2";
 fileFormat = ".xlsx";
 sim_inputFile = strcat(inputHeader, fileFormat);
 
@@ -38,7 +38,7 @@ mkdir(dataDirHeader)
 for foi = foi_input
     for tweek = testing_wk %%debug
         
-        testVersion = strcat('mpox2024_foi_', num2str(foi), 'iso0.2');%, string(tweek));  %'mpox_'
+        testVersion = strcat('test_mpox2024_foi_', num2str(foi), 'iso0.2');%, string(tweek));  %'mpox_'
     
         % update the complete dataDir header
         testVerDir = strcat(dataDirHeader,"/",testVersion);

@@ -24,7 +24,7 @@ policy_wk = 100; % ploicy starting week, week0 Jun26-Jul02, week14 Oct2-Oct8
 sens = 0; % turn on or off sens analysis
 
 % defining the input file name
-inputHeader = "Inputs_mpox2024_set2";
+inputHeader = "input/Inputs_mpox2024_set2";
 fileFormat = ".xlsx";
 sim_inputFile = strcat(inputHeader, fileFormat);
 

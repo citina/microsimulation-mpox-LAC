@@ -15,9 +15,9 @@ of bootstraps, and y is the number of iterations we have in total
 
 %% bootstrap settings
 bs = 500; % should be at least 20 for the code to work
-iterations = 1:5; %1:10;
-numWks = 38; %85;
-Scenario_name = 'mpox_init_Mar112024'; %"mpox2024_S14";
+iterations = 1:10;
+numWks = 85;
+Scenario_name = "mpox2024_S13";
 
 % a matrix to store indecies of iterations
 % e.g.: if 3 iterations, then randomly select 3 samples with replacement
@@ -29,8 +29,8 @@ end
 
 %% paths
 % Tally path of each iteration
-% InPath = fileparts(pwd) + "/MonteCarloResults/" + Scenario_name;
-InPath = fileparts(pwd) + "/create files/" + Scenario_name;
+InPath = fileparts(pwd) + "/MonteCarloResults/" + Scenario_name;
+% InPath = fileparts(pwd) + "/create files/" + Scenario_name;
 
 % metric matrix output path
 % OutPath = fileparts(pwd) + "/MonteCarloResults/" + Scenario_name;
@@ -47,7 +47,7 @@ writetable(Tabl, OutPath+'/memo.txt', 'Delimiter','|')
 %     'To_aware_b', 'To_aware_h', 'To_aware_w',...
 %     'ToVax1', 'ToVax2', 'ToVax', 'ToVax1Plwh',...
 %     'NewInfections', 'newInfect_hiv', 'r_t'};
-metrics_names = {'ToVax1', 'ToVax2', 'ToVax1Plwh'};
+metrics_names = {'infected_per_infectious'};
 
 % Initialize the struct
 metricShelf = struct();
